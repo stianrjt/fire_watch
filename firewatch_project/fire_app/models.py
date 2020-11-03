@@ -11,3 +11,5 @@ class FireData(models.Model):
 
     def __str__(self):
         return self.month + " " + self.day
+
+
