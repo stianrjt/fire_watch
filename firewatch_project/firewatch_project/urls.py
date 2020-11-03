@@ -20,4 +20,5 @@ from fire_app import views
 urlpatterns = [
     path('', views.home, name='FireApp'),
     path('admin/', admin.site.urls),
+    path('load/', views.load_csv, name='Load CSV')
 ]
