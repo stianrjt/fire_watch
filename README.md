@@ -20,3 +20,13 @@ pytz==2020.4
 retrying==1.3.3  
 six==1.15.0  
 sqlparse==0.4.1  
+
+## How to run
+### In terminal:
+
+1. git clone https://github.com/stianrjt/fire_watch.git
+2. cd fire_watch/firewatch_project
+3. python manage.py mirgrate
+4. python manage.py runserver
+
+Copy the adress prrovided in the terminal (eks: http://127.0.0.1:8000/) and add load (eks: http://127.0.0.1:8000/load) to load csv into database. 
