@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1dc87d-e0dc-4817-a798-33b8884669d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/firewatch_project/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firewatch_project/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firewatch_project/csv_to_database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firewatch_project/fire_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/firewatch_project/fire_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firewatch_project/fire_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/firewatch_project/fire_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firewatch_project/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/firewatch_project/templates/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firewatch_project/fire_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="405">
               <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
@@ -42,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firewatch_project/templates/overview.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -63,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firewatch_project/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="486">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -90,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1460">
-              <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+            <state relative-caret-position="1087">
+              <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
               <folding>
                 <element signature="e#318#342#0" expanded="true" />
               </folding>
@@ -99,14 +96,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding>
                 <element signature="e#641#673#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/firewatch_project/templates/registration/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -128,16 +134,17 @@
       <list>
         <option value="$PROJECT_DIR$/firewatch_project/firewatch_project/fire_app/views.py" />
         <option value="$PROJECT_DIR$/firewatch_project/fire_app/admin.py" />
-        <option value="$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py" />
         <option value="$PROJECT_DIR$/firewatch_project/csv_to_database.py" />
         <option value="$PROJECT_DIR$/firewatch_project/fire_app/csv_to_database.py" />
         <option value="$PROJECT_DIR$/firewatch_project/fire_app/models.py" />
-        <option value="$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py" />
         <option value="$PROJECT_DIR$/firewatch_project/templates/home.html" />
         <option value="$PROJECT_DIR$/firewatch_project/templates/base.html" />
         <option value="$PROJECT_DIR$/firewatch_project/templates/add_data.html" />
         <option value="$PROJECT_DIR$/firewatch_project/fire_app/views.py" />
         <option value="$PROJECT_DIR$/firewatch_project/templates/overview.html" />
+        <option value="$PROJECT_DIR$/firewatch_project/templates/login.html" />
+        <option value="$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py" />
+        <option value="$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py" />
       </list>
     </option>
   </component>
@@ -183,6 +190,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/firewatch_project/templates/registration" />
       <recent name="$PROJECT_DIR$/firewatch_project/fire_app" />
       <recent name="$PROJECT_DIR$/firewatch_project/static/csv" />
     </key>
@@ -309,50 +317,6 @@
     <entry file="file://$PROJECT_DIR$/testing.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
-          <folding>
-            <element signature="e#318#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firewatch_project/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firewatch_project/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#641#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firewatch_project/fire_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firewatch_project/fire_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -367,10 +331,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/firewatch_project/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firewatch_project/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firewatch_project/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/firewatch_project/templates/overview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firewatch_project/firewatch_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1087">
+          <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+          <folding>
+            <element signature="e#318#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firewatch_project/fire_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firewatch_project/firewatch_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#641#673#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
