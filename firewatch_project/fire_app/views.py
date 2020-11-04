@@ -5,6 +5,7 @@ import pandas as pd
 import plotly
 import plotly.graph_objs as go
 import json
+import numpy as np
 
 
 
@@ -21,7 +22,9 @@ def graphs(request):
     if request.method == 'POST':
         features = request.POST.getlist('box')
         print(features)
-    plot = create_plot()
+        plot = create_plot(features)
+        return render(request, 'graphs.html', {'plot': plot})
+    plot = create_plot(["rain", "wind"])
     return render(request, 'graphs.html', {'plot': plot})
 
 
@@ -50,16 +53,16 @@ def get_data_from_csv():
     df = df.reset_index(drop=True)
     return df
 
-def create_plot():
+def create_plot(feature):
     N = 40
     data = FireData.objects.all()
-    x = [d.rain for d in data]
-    y = [d.month for d in data]
-    df = pd.DataFrame({'Month': x, 'Rain': y}) # creating a sample dataframe
-    fig = go.Figure(data = [ go.Bar(y=df['Month'], x=df['Rain'])], layout=go.Layout(
-        title="Fire data",
-        template="seaborn"
-    ))
+    fig = go.Figure()
+    for fet in feature:
+        y = [getattr(d, fet) for d in data]
+        x = [i for i, d in enumerate(data)]
+        fig.add_trace(go.Scatter(x=x, y=y, name=fet,))
+
+
 
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
