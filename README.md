@@ -27,6 +27,11 @@ sqlparse==0.4.1
 1. git clone https://github.com/stianrjt/fire_watch.git
 2. cd fire_watch/firewatch_project
 3. python manage.py mirgrate
-4. python manage.py runserver
+4. python3 manage.py createsuperuser --> fill out to create user
+5. python manage.py runserver
 
 Copy the adress prrovided in the terminal (eks: http://127.0.0.1:8000/) and add load (eks: http://127.0.0.1:8000/load) to load csv into database. 
+
+You can go to "Add data" in the menu bar and log in with the usper user to add data or create other users. 
+Create a user with "Staff Status" and give the permission "fire_app|Fire Data|can add fire data. 
+The user will be able to log in and add data to the database.
