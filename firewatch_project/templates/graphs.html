@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<div class="container-fluid">
+    <div class="row align-items-start">
+        <div class="col-md-auto">
+<div class="container" style="text-align: left;">
+             <form method="POST">
+                 {% csrf_token %}
+
+                 <p style="font-size:30px;">Select features: </p>
+                 Select features to show in graph.<br>
+                 <input type="checkbox" name="box" value="temp"checked> Temp<br>
+                 <input type="checkbox" name="box" value="relative_humidity" > Rel.Hum.<br>
+                 <input type="checkbox" name="box" value="wind" > Wind<br>
+                 <input type="checkbox" name="box" value="rain" > Rain<br>
+                 <input type="checkbox" name="box" value="area" > Area<br>
+
+
+                 <div class="container" style="padding-top:30px">
+                     <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+                 </div>
+
+             </form>
+        </div>
+            </div>
+
+        <div class="col align-self-start">
+
+            <div class="chart" id="bargraph"> </div>
+
+           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+            <div class="chart" id="bargraph">
+        <script>
+            var graphs = {{plot | safe}};
+            Plotly.plot('bargraph',graphs,{});
+        </script>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+
+{% endblock %}

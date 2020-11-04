@@ -1,19 +1,28 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import FireData
-import csv
 import pandas as pd
-import numpy as nps
+import plotly
+import plotly.graph_objs as go
+import json
 
-def home(request):
-    data = FireData.objects.all()
-    return render(request, 'home.html', {'data': data})
 
-def add_data(request):
-    return render(request, 'add_data.html', {})
 
 def overview(request):
-    return render(request, 'overview.html', {})
+    if request.method == 'POST':
+        month = request.POST["month"]
+        data = FireData.objects.filter(month=month)
+        return render(request,'overview_month.html', {'data': data})
+    data = FireData.objects.all()
+    return render(request, 'overview.html', {'data': data})
+
+
+def graphs(request):
+    if request.method == 'POST':
+        features = request.POST.getlist('box')
+        print(features)
+    plot = create_plot()
+    return render(request, 'graphs.html', {'plot': plot})
 
 
 def load_csv(request):
@@ -31,7 +40,6 @@ def load_csv(request):
     return HttpResponse('CSV LOADED INTO DATABASE')
 
 
-
 def get_data_from_csv():
     df = pd.read_csv('static/csv/forestfires.csv')
     # Sort data by month
@@ -42,21 +50,17 @@ def get_data_from_csv():
     df = df.reset_index(drop=True)
     return df
 
+def create_plot():
+    N = 40
+    data = FireData.objects.all()
+    x = [d.rain for d in data]
+    y = [d.month for d in data]
+    df = pd.DataFrame({'Month': x, 'Rain': y}) # creating a sample dataframe
+    fig = go.Figure(data = [ go.Bar(y=df['Month'], x=df['Rain'])], layout=go.Layout(
+        title="Fire data",
+        template="seaborn"
+    ))
 
-"""alternative method for reading csv:
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
-with open('static/csv/forestfires.csv') as f:
-    reader = csv.reader(f)
-    next(reader)
-    for row in reader:
-        print(row[2:])
-        created = FireData.objects.get_or_create(
-            month=row[2],
-            day=row[3],
-            temp=float(row[8]),
-            relative_humidity=float(row[9]),
-            wind=float(row[10]),
-            rain=float(row[11]),
-            area=float(row[12]),
-        )
-"""
+    return graphJSON
